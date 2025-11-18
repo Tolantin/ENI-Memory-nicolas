@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil Memory</title>
+    <link rel="stylesheet" href="Style/global.css">
+    <link rel="stylesheet" href="Style/inscription.css">
+
+    <!-- police texte pour le header -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- police de texte du main -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+        <a href="accueil.html"><img src="ressources/logo-memory.png"></a>
+        <div id="headerBar">
+            <nav id="menu">
+                <a id="menuAccueil" class="menuTitre" href="accueil.html">Accueil</a>
+                <a id="menuJouer" class="menuTitre" href="jouer.html">Jouer</a>
+                <a id="menuInscription" class="menuTitre" href="inscription.html">Inscription</a>
+                <a id="menuConnexion" class="menuTitre" href="connexion.html">Connexion</a>
+                <a id="menuProfil" class="menuTitre" href="profil.html">Profil</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="mainID">
+        <section id="sectionInscription">
+            <fieldset>
+                <legend>Inscription</legend>
+                <form>
+                    <div>
+                        <label>Pseudo :</label>
+                        <div>
+                            <input type="text" id="pseudo" name="pseudo" placeholder="Pseudonyme" pattern="a-zA-Z" required>
+                            <img>
+                        </div>
+                    </div>
+                    <div >
+                        <label>Choisir un mot de passe :</label>
+                        <div>
+                            <input type="password" id="mdp" name="mdp" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                            <img>
+                        </div>
+                    </div>
+                    <div>
+                        <label>Confirmer le mot de passe :</label>
+                        <div>
+                            <input>
+                            <img>
+                        </div>
+                    </div>
+                    <div >
+                        <label>Email :</label>
+                        <div>
+                            <input>
+                            <img>
+                        </div>
+                    </div>
+                    <div >
+                        <label>Confirmer l'email :</label>
+                        <div>
+                            <input>
+                            <img>
+                        </div>
+                    </div>
+
+                </form>
+            </fieldset>
+        </section>
+    </main>
+    <footer>
+        Utilisation soumise aux <span><a href="conditionsGénérale.html">Conditions générales</a></span> et à la <span><a
+                href="confidentialité.html">Déclaration de confidentialité</a></span> du site.
+    </footer>
+    <script src="JS/accueil.js"></script>
+</body>
+
+</html>

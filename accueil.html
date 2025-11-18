@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil Memory</title>
+    <link rel="stylesheet" href="Style/global.css">
+    <link rel="stylesheet" href="Style/accueil.css">
+
+    <!-- police texte pour le header -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- police de texte du main -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+        <a href="accueil.html"><img src="ressources/logo-memory.png"></a>
+        <div id="headerBar">
+            <nav id="menu">
+                <a id="menuAccueil" class="menuTitre" href="accueil.html">Accueil</a>
+                <a id="menuJouer" class="menuTitre" href="jouer.html">Jouer</a>
+                <a id="menuInscription" class="menuTitre" href="inscription.html">Inscription</a>
+                <a id="menuConnexion" class="menuTitre" href="connexion.html">Connexion</a>
+                <a id="menuProfil" class="menuTitre" href="profil.html">Profil</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="mainID">
+        <section id="sectionAccueil">
+            <div id="divBienvenue">
+                <h1>Bienvenue sur Memory</h1>
+                <p>Jouez et tentez de réaliser le meilleur score possible.</p>
+            </div>
+            <div id="divRegles">
+                <h2>Règle du jeu :</h2>
+                <ul>
+                    <li>
+                        <p>Retournez deux cartes à la fois.</p>
+                    </li>
+                    <li>
+                        <p>Si les images sont identiques, les cartes restent visibles : vous avez trouvé une paire.</p>
+                    </li>
+                    <li>
+                        <p>Si les images sont différentes, les cartes se retournent de nouveau face cachée à l’endroit
+                            où elles étaient.</p>
+                    </li>
+                    <li>
+                        <p>La partie est terminée lorsque toutes les cartes ont été assemblées par paires.</p>
+                    </li>
+                </ul>
+                <img src="ressources/exemple-memory.png">
+            </div>
+            <div id="divFonctionnalitees">
+                <p>Si vous voulez garder une trace de votre score, inscrivez-vous via le formulaire.</p>
+                <p>Le jeu enregistre les 5 meilleurs scores.</p>
+                <p>Pour relancer une partie, appuyez sur la barre d’espace.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        Utilisation soumise aux <span><a href="conditionsGénérale.html">Conditions générales</a></span> et à la <span><a
+                href="confidentialité.html">Déclaration de confidentialité</a></span> du site.
+    </footer>
+    <script src="JS/accueil.js"></script>
+</body>
+
+</html>

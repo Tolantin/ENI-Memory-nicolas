@@ -1,0 +1,123 @@
+/* -------------BODY------------- */
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(2, 16, 41);
+}
+
+body h1,
+h2 {
+    color: rgb(51, 195, 231);
+}
+
+body p {
+    color: beige;
+}
+
+
+a {
+    color: inherit;
+    /* prend la couleur du parent */
+    text-decoration: none;
+    /* retire le soulignement */
+}
+
+a:visited {
+    color: inherit;
+    /* retire la couleur violette */
+}
+
+
+/* ------------FIN BODY------------- */
+/* -----------DEBUT HEADER---------- */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid rgb(51, 195, 231);
+    background-color: rgb(36, 72, 133);
+}
+
+header img {
+    min-width: 50px;
+    width: 10vh;
+    max-width: 200px;
+}
+
+#headerBar {
+    display: flex;
+    justify-content: right;
+}
+
+#menu {
+    display: inline-block;
+    margin: 0 2.5vw 0 0;
+}
+
+.menuTitre {
+    margin: 0;
+    padding: 2.6rem 2rem;
+
+    /* police de texte */
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: large;
+}
+
+.menuTitre:hover {
+    transition: 0.25s;
+    color: rgb(74, 164, 187);
+    background: linear-gradient(to top,
+            rgba(51, 195, 231, 1) 0%,
+            rgba(51, 195, 231, 0.5) 5%,
+            rgba(51, 195, 231, 0) 25%,
+            rgba(51, 195, 231, 0)100%)
+}
+
+
+
+
+/* ------------FIN HEADER------------- */
+/* ------------DEBUT MAIN------------- */
+main {
+    display: flex;
+    justify-content: center;
+    /* centre verticalement */
+    flex: 1;
+    background: linear-gradient(to bottom,
+            rgba(39, 94, 156, 1)0%,
+            rgba(1, 1, 1, 0) 25%,
+            rgba(1, 1, 1, 0)100%);
+
+    font-family: "Saira", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+/* --------------FIN MAIN-------------- */
+/* ------------DEBUT FOOTER------------- */
+
+footer {
+    color: lightgray;
+    margin: 0 auto;
+    padding: 3em 0 2em 0;
+}
+
+footer span {
+    text-decoration: underline;
+}
+
+/* ------------FIN FOOTER------------- */
