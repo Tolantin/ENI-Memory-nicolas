@@ -1,11 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Accueil Memory</title>
+    <link rel="stylesheet" href="Style/global.css">
+    <link rel="stylesheet" href="Style/Connexion.css">
+
+    <!-- police texte pour le header -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- police de texte du main -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    
+    <header id="header">
+        <a href="accueil.html"><img src="ressources/logo-memory.png"></a>
+        <div id="headerBar">
+            <nav id="menu">
+                <a id="menuAccueil" class="menuTitre" href="accueil.html">Accueil</a>
+                <a id="menuJouer" class="menuTitre" href="jouer.html">Jouer</a>
+                <a id="menuInscription" class="menuTitre" href="inscription.html">Inscription</a>
+                <a id="menuConnexion" class="menuTitre" href="connexion.html">Connexion</a>
+                <a id="menuProfil" class="menuTitre" href="profil.html">Profil</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="mainID">
+        <section id="sectionConnexion">
+            <fieldset>
+                <legend>Connexion</legend>
+                <form action="https://formspree.io/f/{form_id}" method="post" id="formConnexion">
+
+                    <!-- Pseudonyme -->
+                    <div class="inputWrapper">
+                        <input type="text" id="pseudo" name="pseudo" placeholder="Pseudonyme"
+                            required>
+                        <div class="inputWrapperValidation">
+                            <img id="pseudoChecked" class="valided" src="ressources/check.svg">
+                            <p id="errorPseudo" class="messageError">Le pseudo doit contenir au moins 3 caractères.</p>
+                        </div>
+                    </div>
+
+                    <!-- Mot de passe -->
+                    <div class="inputWrapper">
+                        <div class="inputWrapperField">
+                            <img id="showMdp" class="eyeIcon" src="ressources/eye-closed.png">
+                            <input type="password" id="mdp" name="mdp" placeholder="Mot de passe" required>
+                        </div>
+                        <div class="inputWrapperValidation">
+                            <img id="mdpChecked" class="valided" src="ressources/check.svg">
+                            <p id="errorMdp" class="messageError">Le mot de passe doit contenir min., maj., chiffre et
+                                au moins 8 caractères.</p>
+                        </div>
+                    </div>
+
+                    <!-- Les boutons -->
+                    <div class="boutonConnexion">
+                        <button type="submit" class="btn btnRed" id="boutonConnexion">Se cennecter</button>
+                    </div>
+                </form>
+            </fieldset>
+        </section>
+
+    </main>
+    <footer>
+        <p>Utilisation soumise aux <span><a href="conditionsGénérale.html">Conditions générales</a></span> et à la
+            <span><a href="confidentialité.html">Déclaration de confidentialité</a></span> du site.
+        </p>
+    </footer>
+    <script src="JS/Connexion.js"></script>
 </body>
+
 </html>

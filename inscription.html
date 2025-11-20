@@ -41,52 +41,82 @@
         <section id="sectionInscription">
             <fieldset>
                 <legend>Inscription</legend>
-                <form>
-                    <div>
-                        <label>Pseudo :</label>
-                        <div>
-                            <input type="text" id="pseudo" name="pseudo" placeholder="Pseudonyme" pattern="a-zA-Z" required>
-                            <img>
-                        </div>
-                    </div>
-                    <div >
-                        <label>Choisir un mot de passe :</label>
-                        <div>
-                            <input type="password" id="mdp" name="mdp" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
-                            <img>
-                        </div>
-                    </div>
-                    <div>
-                        <label>Confirmer le mot de passe :</label>
-                        <div>
-                            <input>
-                            <img>
-                        </div>
-                    </div>
-                    <div >
-                        <label>Email :</label>
-                        <div>
-                            <input>
-                            <img>
-                        </div>
-                    </div>
-                    <div >
-                        <label>Confirmer l'email :</label>
-                        <div>
-                            <input>
-                            <img>
+                <form action="https://formspree.io/f/{form_id}" method="post" id="formInscription">
+                    <!-- Pseudonyme -->
+                    <div class="inputWrapper">
+                        <input type="text" id="pseudo" name="pseudo" placeholder="Pseudonyme" pattern="[A-Za-z0-9]+"
+                            required>
+                        <div class="inputWrapperValidation">
+                            <img id="pseudoChecked" class="valided" src="ressources/check.svg">
+                            <p id="errorPseudo" class="messageError">Le pseudo doit contenir au moins 3 caractères.</p>
                         </div>
                     </div>
 
+                    <!-- Mot de passe -->
+                    <div class="inputWrapper">
+                        <div class="inputWrapperField">
+                            <img id="showMdp" class="eyeIcon" src="ressources/eye-closed.png">
+                            <input type="password" id="mdp" name="mdp" placeholder="Mot de passe"
+                                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                        </div>
+                        <div class="inputWrapperValidation">
+                            <img id="mdpChecked" class="valided" src="ressources/check.svg">
+                            <p id="errorMdp" class="messageError">Le mot de passe doit contenir min., maj., chiffre et
+                                au moins 8 caractères.</p>
+                        </div>
+                    </div>
+
+                    <!-- Vérif. mot de passe -->
+                    <div class="inputWrapper">
+                        <div class="inputWrapperField">
+                            <img id="showMdpVerif" class="eyeIcon" src="ressources/eye-closed.png">
+                            <input type="password" id="checkMdp" name="checkMdp" placeholder="Confirmer le mot de passe"
+                                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                        </div>
+                        <div class="inputWrapperValidation">
+                            <img id="verifMdpChecked" class="valided" src="ressources/check.svg">
+                            <p id="errorVerifMdp" class="messageError">Le mot de passe ne correspond pas.</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Email -->
+                    <div class="inputWrapper">
+                        <input type="text" id="email" name="email" placeholder="Email"
+                            pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z.]{2,15}">
+                        <div class="inputWrapperValidation">
+                            <img id="emailChecked" class="valided" src="ressources/check.svg">
+                            <p id="errorEmail" class="messageError">Veuillez rentrer une adresse mail valide.</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Vérif. Email -->
+                    <div class="inputWrapper">
+                        <input type="text" id="checkEmail" name="checkEmail" placeholder="Confirmer l'email"
+                            pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z.]{2,15}">
+                        <div class="inputWrapperValidation">
+                            <img id="verifEmailChecked" class="valided" src="ressources/check.svg">
+                            <p id="errorVerifEmail" class="messageError">L'adresse mail ne correspond pas.</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Les boutons -->
+                    <div class="boutonInscription">
+                        <button type="submit" class="btn btnRed" id="boutonInscription">S'inscrire</button>
+                    </div>
                 </form>
             </fieldset>
         </section>
+
     </main>
     <footer>
-        Utilisation soumise aux <span><a href="conditionsGénérale.html">Conditions générales</a></span> et à la <span><a
-                href="confidentialité.html">Déclaration de confidentialité</a></span> du site.
+        <p>Utilisation soumise aux <span><a href="conditionsGénérale.html">Conditions générales</a></span> et à la
+            <span><a href="confidentialité.html">Déclaration de confidentialité</a></span> du site.
+        </p>
     </footer>
-    <script src="JS/accueil.js"></script>
+    <script src="JS/Inscription.js"></script>
 </body>
 
 </html>
