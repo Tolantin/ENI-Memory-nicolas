@@ -215,7 +215,6 @@ boutonInscription.addEventListener('click', function (event) {
         formInscription.submit();
         window.location.href = "profil.html" // OU BIEN window.open('profil.html', '_blank')
     } else {
-        // Afficher un message d'erreur ou effectuer une autre action
         alert("Veuillez remplir correctement tous les champs du formulaire.");
     }
 });

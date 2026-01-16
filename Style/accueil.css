@@ -39,13 +39,16 @@
     font-style: normal;
 }
 
+
+/* espace entre la puce et le texte */
 #divRegles ul li {
     padding-left: 1.2rem;
-    /* espace entre la puce et le texte */
+    
 }
 
+/*style des puces*/
 #divRegles ul li::marker {
-    /*style des puces*/
+    
     color: rgb(51, 195, 231);
     font-size: 1rem;
     content: "►";

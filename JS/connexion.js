@@ -1,7 +1,18 @@
-// -------------------TEST PSEUDO-------------------------
+// -------------------DECLARATION VARIABLES-------------------------
 
 let inputPseudo = document.getElementById("pseudo")
 let errorPseudo = document.getElementById("errorPseudo");
+
+let inputMdp = document.getElementById('mdp')
+let errorMdp = document.getElementById('errorMdp')
+
+let showMdp = document.getElementById('showMdp')
+let boutonConnexion = document.getElementById('boutonConnexion')
+let formConnexion = document.getElementById('formConnexion')
+
+// -------------------TEST PSEUDO-------------------------
+
+
 
 function verifPseudo() {
     const pseudoStored = localStorage.getItem("pseudo");
@@ -11,19 +22,19 @@ function verifPseudo() {
 
 // -------------------TEST MDP-------------------------
 
-let inputMdp = document.getElementById('mdp')
-let errorMdp = document.getElementById('errorMdp')
+
 
 function verifMdp() {
-    const mdpStoded = localStorage.getItem("mdp");
-    return inputMdp.value === mdpStored;
+    const mdpStored = localStorage.getItem("mdp"); 
+    return inputMdp.value === mdpStored; 
 }
 
 
+
 // Show/Hide MDP
-let showMdp = document.getElementById('showMdp')
+
 showMdp.addEventListener('click', function () {
-    if (inputMdp.type === "password") {
+    if (inputMdp.type == "password") {
         inputMdp.type = "text"
         showMdp.src = "ressources/eye-opened.png"
     } else {
@@ -35,18 +46,20 @@ showMdp.addEventListener('click', function () {
 
 // -------------------TEST FORMULAIRE COMPLET-------------------------
 
-function testInfos(){
+function testInfos() {
     let pseudoOK = verifPseudo();
     let mdpOK = verifMdp();
 
-    if(!pseudoOK){
+    // Test Pseudo
+    if (!pseudoOK) {
         errorPseudo.classList.add("messageError-visible");
-        inputPseudo=""
-    }else {
-        // pseudo correct → on masque l'erreur si elle était affichée
+        inputPseudo.value = "";
+    } else {
         errorPseudo.classList.remove("messageError-visible");
     }
 
+
+    // Test MDP
     if (!mdpOK) {
         errorMdp.classList.add("messageError-visible");
         inputMdp.value = "";
@@ -60,38 +73,46 @@ function testInfos(){
 
 
 
-
-
+// Couleur du Bouton
 
 function backgroundBouton() {
     let formulaireValide = verifPseudo() && verifMdp()
+
     if (formulaireValide) {
-        // formulaire OK → bouton "vert"
+        // Bouton vert
         boutonConnexion.classList.remove('btnRed');
         boutonConnexion.classList.add('btnGreen');
-    } else {
-        // formulaire pas OK → bouton "rouge"
+    } 
+    else {
+        // BoutonRouge
         boutonConnexion.classList.remove('btnGreen');
         boutonConnexion.classList.add('btnRed');
     }
 }
 
+inputPseudo.addEventListener("input", backgroundBouton);
+inputMdp.addEventListener("input", backgroundBouton);
 
 
 // Submit
 
-let boutonConnexion = document.getElementById('boutonConnexion')
-let formConnexion = document.getElementById('formConnexion')
+
 
 
 boutonConnexion.addEventListener('click', function (event) {
     // Empêchepar défaut l'envoi du formulaire
     event.preventDefault();
 
-    // Envoie des données si les tests sont validés
-   
+    let formulaireValide = testInfos();  // on utilise ta fonction de test
+
+    if (formulaireValide) {
+        // Tous les champs sont corrects → redirection
+        window.location.href = "profil.html";
+
+        // Envoie des données si les tests sont validés
+    }
 })
-// -------------------FIN CODE-------------------------
+// -------------------FIN DU CODE-------------------------
 
 
 

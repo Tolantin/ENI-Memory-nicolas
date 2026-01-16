@@ -63,7 +63,6 @@ input::placeholder {
     justify-content: flex-start;
     margin: 10px 0;
     gap: 10px;
-    /* espace entre l’input et l’icône */
 }
 
 .inputWrapperValidation {
@@ -161,7 +160,6 @@ button:hover {
 
 .messageError {
     color: rgb(255, 120, 120);
-    /* rouge clair */
     font-size: 14px;
     margin-top: 5px;
     margin-right: 5px;

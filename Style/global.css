@@ -23,15 +23,12 @@ body p {
 
 
 a {
-    color: inherit;
-    /* prend la couleur du parent */
+    color: inherit; /* Prend la couleur du parent */
     text-decoration: none;
-    /* retire le soulignement */
 }
 
 a:visited {
-    color: inherit;
-    /* retire la couleur violette */
+    color: inherit;/* Retire la couleur violette */
 }
 
 
@@ -65,8 +62,6 @@ header img {
 .menuTitre {
     margin: 0;
     padding: 2.6rem 2rem;
-
-    /* police de texte */
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-weight: bolder;
@@ -92,7 +87,6 @@ header img {
 main {
     display: flex;
     justify-content: center;
-    /* centre verticalement */
     flex: 1;
     background: linear-gradient(to bottom,
             rgba(39, 94, 156, 1)0%,
