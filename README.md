@@ -1,93 +1,81 @@
 # ENI-Memory
 
-ENI-Memory est un jeu de Memory développé en une semaine dans le cadre de ma formation à l’ENI.
+ENI-Memory est un projet réalisé en une semaine dans le cadre de ma formation à l’ENI.
 
-Le projet consiste en une application web interactive permettant de retrouver des paires de cartes, avec une logique de jeu entièrement gérée en `JavaScript`.
+Le projet avait pour objectif de développer un jeu de type **Memory** en `JavaScript`, tout en mettant en pratique les bases du développement front-end.
 
 ---
 
 # Objectif du projet
 
-L’objectif principal était de développer un projet individuel permettant de consolider les bases du développement front-end.
+L’objectif principal était de consolider mes compétences en :
 
-Ce projet m’a permis de travailler sur :
-
-- la manipulation du `DOM`
-- la gestion d’événements utilisateurs
-- la logique de jeu en `JavaScript`
-- la création d’une interface interactive
+- manipulation du `DOM`
+- gestion des événements utilisateurs
+- logique en `JavaScript`
+- structuration d’une interface interactive
 
 ---
 
 # Contexte
 
-Ce projet a été réalisé individuellement en **1 semaine**, après avoir acquis les bases de `HTML`, `CSS` et `JavaScript`.
+Ce projet a été réalisé individuellement en **1 semaine**, peu de temps après l’apprentissage des bases de `HTML`, `CSS` et `JavaScript`.
 
-L’objectif était de mettre en pratique ces connaissances à travers un projet concret, en autonomie.
+Au-delà de l’aspect technique, ce projet avait également un objectif important :  
+👉 apprendre à **gérer son temps sur un projet de développement**.
 
-Le choix d’un jeu de type **Memory** permettait de travailler :
-
-- la gestion d’état (cartes retournées, paires trouvées)
-- la logique conditionnelle
-- l’interaction utilisateur
+Je me suis rapidement rendu compte que certaines tâches que j’estimais simples (1 à 2 heures) pouvaient en réalité me prendre plusieurs heures, voire une demi-journée.
 
 ---
 
-# Fonctionnalités
+# Approche et choix d’apprentissage
 
-- affichage d’un plateau de jeu dynamique
-- système de retournement de cartes
-- détection des paires
-- gestion de la progression du joueur
-- logique de victoire
+Plutôt que de chercher à terminer rapidement le jeu, j’ai fait le choix de me concentrer sur certains aspects fondamentaux :
 
----
+- la compréhension du `JavaScript`
+- la manipulation du `DOM`
+- le travail autour des interactions (notamment les formulaires)
 
-# Technologies utilisées
+Ce choix a eu un impact direct :
 
-- `HTML5`
-- `CSS3`
-- `JavaScript`
+👉 le projet n’a pas été entièrement finalisé
 
-Aucun framework n’a été utilisé.
-
----
-
-# Fonctionnement du jeu
-
-Le joueur retourne deux cartes à la fois :
-
-- si les cartes sont identiques → elles restent visibles
-- sinon → elles sont retournées
-
-Le but est de retrouver toutes les paires en un minimum de tentatives.
+Cependant, il s’agit d’un **choix volontaire orienté apprentissage**, afin de consolider des bases essentielles avant de passer à des projets plus complexes.
 
 ---
 
 # Ce que j’ai appris
 
-Ce projet m’a permis de progresser sur :
+Ce projet m’a surtout permis de comprendre :
 
-- la manipulation avancée du `DOM`
-- la gestion des événements (`click`, etc.)
-- la structuration d’un script `JavaScript`
-- la gestion d’un état applicatif simple
-- la création d’une logique interactive côté front-end
+- l’importance de la **gestion du temps** en développement
+- la difficulté d’estimer correctement la durée des tâches
+- la nécessité de prioriser entre **finir un projet** et **bien comprendre les fondamentaux**
+
+Sur le plan technique, j’ai renforcé :
+
+- la manipulation du `DOM`
+- la gestion des événements en `JavaScript`
+- la structuration d’un code front-end
 
 ---
 
 # Limites du projet
 
-En raison du temps limité (1 semaine) :
+En raison :
 
-- certaines optimisations sont absentes
-- le design peut être amélioré
-- certaines fonctionnalités (score avancé, timer, animations) pourraient être ajoutées
+- du temps limité (1 semaine)
+- de mon niveau à ce moment-là
+- et de mes choix d’apprentissage
+
+👉 le jeu n’a pas été entièrement implémenté
+
+Ces limites font partie intégrante du projet et reflètent mon processus d’apprentissage à ce moment-là.
 
 ---
 
 # Conclusion
 
-ENI-Memory est un projet clé dans mon apprentissage du développement front-end.
+ENI-Memory représente une étape importante dans mon apprentissage du développement front-end.
 
-Il représente ma première véritable mise en pratique d’une logique interactive en JavaScript, en autonomie, sur un projet complet.
+Ce projet m’a permis de mieux comprendre mes limites, d’améliorer ma gestion du temps, et de poser des bases solides pour la suite de mon parcours.
