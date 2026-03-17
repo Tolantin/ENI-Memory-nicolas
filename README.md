@@ -1,3 +1,5 @@
+![preview](./preview.png)
+
 # ENI-Memory
 
 ENI-Memory est un projet réalisé en une semaine dans le cadre de ma formation à l’ENI.
